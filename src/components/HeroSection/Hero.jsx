@@ -11,8 +11,9 @@ function Hero() {
             <WhatshotIcon className="hot-icon" />
           </div>
           <div className="heromain-text">
-            <h1>
-              The Best Place To Find And Buy Amazing <span>Products</span>
+            <h1 className="bounce-top">
+              The Best Place To Find And Buy Amazing{" "}
+              <span className="text-focus-in">Products</span>
             </h1>
           </div>
           <div className="heromain-desc">
@@ -43,7 +44,7 @@ function Hero() {
             alt=""
             className="heroLarge-img"
           />
-          <div className="product-stats heartbeat">
+          <div className="product-stats vibrate-3">
             <h1>5000+</h1>
             <p>Products</p>
           </div>
