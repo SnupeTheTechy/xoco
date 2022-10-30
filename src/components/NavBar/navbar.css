@@ -82,7 +82,7 @@
 
 .profile-text p {
   font-weight: 500;
-  color: #eaeaea;
+  color: #979797;
   font-size: 0.8rem;
 }
 
@@ -103,7 +103,7 @@ hr {
 
 .hamburger {
   display: none !important;
-  color: white;
+  color: rgba(255, 35, 227, 1);
 }
 
 .hamburger-content {
