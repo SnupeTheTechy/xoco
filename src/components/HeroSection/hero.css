@@ -23,7 +23,7 @@
 .herosmall-text {
   font-size: 1rem;
   font-weight: 500;
-  color: #e6e6e6;
+  color: #979797;
   align-self: start;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 .hot-icon {
-  color: white;
+  color: red;
   font-size: 1.5rem;
 }
 
@@ -60,7 +60,7 @@
   margin-top: 1.2rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #dcdcdc;
+  color: #979797;
   align-self: start;
   width: 80%;
 }

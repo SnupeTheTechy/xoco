@@ -43,10 +43,10 @@ function Hero() {
             alt=""
             className="heroLarge-img"
           />
-          <div className="product-stats heartbeat">
+          {/* <div className="product-stats heartbeat">
             <h1>5000+</h1>
             <p>Products</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
