@@ -1,0 +1,263 @@
+.bestSeller-container {
+  padding: 1rem 4rem;
+  overflow-x: hidden;
+}
+
+.bestSeller-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bestSeller-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem 2rem 5rem;
+  /* justify-self: center;
+  align-self: center; */
+}
+
+.bestSeller-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-self: center;
+  width: 80%;
+  line-height: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.bestSeller-heading span {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 190, 247, 1) 0%,
+    rgba(255, 120, 238, 1) 35%,
+    rgba(255, 35, 227, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bestSeller-subheading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e1e1e1;
+  align-self: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 1.8rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  flex: 0.2;
+  margin-right: 3rem;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #939393;
+  margin-left: 0.5rem;
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.productSearch-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-category {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  flex: 0.2;
+  margin-right: 3rem;
+}
+
+.search-category :nth-child(1) {
+  margin-left: 0rem;
+}
+
+.search-category span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #939393;
+  margin-left: 4rem;
+  padding: 1rem 2rem;
+}
+
+.search-category span:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+/* check this later  */
+.search-category span:active {
+  background-color: black;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.2rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* padding-right: 4rem; */
+  }
+
+  .search-category span {
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .bestSeller-container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .search-category span {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .filter span {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .productSearch-bar {
+    /* flex-direction: column;
+    width: 5rem; */
+    display: none;
+  }
+
+  .search-category {
+    margin-bottom: 1rem;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+
+  /* .search-category :nth-child(1) {
+    margin-left: 4rem;
+  } */
+
+  .search-category span {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    /* padding-right: 4rem; */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bestSeller-container {
+    padding: 1rem 0.8rem;
+  }
+
+  .bestSeller-heading {
+    width: 100%;
+  }
+
+  .bestSeller-heading h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .bestSeller-subheading {
+    width: 100%;
+  }
+
+  .bestSeller-subheading p {
+    font-size: 1rem;
+    margin-right: 3rem;
+  }
+
+  .search-button {
+    /* padding: 0.5rem 0.5rem; */
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .bestSeller-heading {
+    width: 100%;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .bestSeller-heading h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: start;
+  }
+
+  .bestSeller-subheading {
+    width: 100%;
+    align-self: start;
+  }
+
+  .bestSeller-subheading p {
+    font-size: 0.8rem;
+    margin-right: 3rem;
+  }
+
+  .search-button {
+    /* padding: 0.5rem 0.5rem; */
+    font-size: 0.8rem;
+  }
+
+  .search {
+    width: 271px;
+    margin-right: 2rem;
+    /* padding: 0 1rem; */
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .bestSeller-text {
+    padding: 2rem 0rem 2rem 2rem;
+  }
+
+  .product-grid {
+    padding: 2rem 0rem;
+  }
+}

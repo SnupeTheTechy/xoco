@@ -1,0 +1,265 @@
+.navbar-container {
+  padding: 1rem 4rem;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+  font-size: 0.9rem;
+  gap: 3rem;
+  font-weight: 500;
+  flex: 0.4;
+  padding: 0 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  flex: 0.2;
+  margin-right: 2rem;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #bfbfbf;
+}
+
+.search-icon {
+  color: #bfbfbf;
+  /* font-size: 1.5rem !important; */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0.2;
+  margin-left: 2.5rem;
+}
+
+.profile-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text h3 {
+  font-weight: 600;
+}
+
+.profile-text p {
+  font-weight: 500;
+  color: #eaeaea;
+  font-size: 0.8rem;
+}
+
+hr {
+  border: 1px solid #aaa9a9;
+  height: 1.5rem;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 0.5rem;
+  justify-self: flex-end;
+}
+
+.hamburger {
+  display: none !important;
+  color: #ff23e3;
+}
+
+.hamburger-content {
+  display: none;
+  flex-direction: column;
+  background-color: #ff23e3;
+  border-radius: 1.5rem;
+}
+
+.hamburger-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.hamburger-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  flex: 0.2;
+  margin-right: 2rem;
+}
+
+.hamburger-search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #bfbfbf;
+}
+
+.hamburger-logo {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-container {
+    padding: 1rem 1.2rem;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .navbar-links {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+
+  .search-bar {
+    margin-right: 0.8rem;
+  }
+
+  .search-bar input {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .profile-text h3 {
+    font-size: 0.8rem;
+  }
+
+  .profile-text p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    padding: 1rem 0.8rem;
+  }
+
+  .navbar-logo {
+    font-size: 0.8rem;
+  }
+
+  .navbar-links {
+    font-size: 0.7rem;
+    gap: 0.5rem;
+  }
+
+  .search-bar {
+    margin-right: 0.5rem;
+  }
+
+  .search-bar input {
+    padding: 0.2rem 0.3rem;
+  }
+
+  .profile-text h3 {
+    font-size: 0.7rem;
+  }
+
+  .profile-text p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-content {
+    /* width: 80%; */
+    /* margin-left: 5rem; */
+    flex-direction: column;
+    display: none;
+  }
+
+  .search-bar {
+    width: 20%;
+  }
+
+  .search-bar input {
+    padding: 0.3rem 0.5rem;
+    width: 100%;
+  }
+
+  .hamburger-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .hamburger-content {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .navbar-logo {
+    font-size: 0.8rem;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .setting {
+    display: none;
+  }
+}
