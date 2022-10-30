@@ -67,7 +67,7 @@ function Footer() {
         </div>
       </div>
       <div className="footnote">
-        <p>2023-2079 Xoco All Right Reserved</p>
+        <p>2023-2079 Xoco By MetaSoftDev All Right Reserved</p>
       </div>
     </div>
   );
